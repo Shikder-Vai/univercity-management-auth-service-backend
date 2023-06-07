@@ -3,7 +3,7 @@ import cors from 'cors'
 const app: Application = express()
 
 //cors setup
-app.use(cors())
+app.use(cors(sdh))
 
 //parser
 app.use(express.json())
