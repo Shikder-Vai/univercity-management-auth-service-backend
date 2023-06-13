@@ -8,8 +8,6 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
   const id = await genarateUserId()
   user.id = id
 
-  console.log(` this is final id after created user${id}`)
-
   //need default password need.
   if (!user.password) {
     user.password = config.default_user_pass as string
