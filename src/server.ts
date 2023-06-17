@@ -1,19 +1,20 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-import config from './config/index'
-import app from './app'
+import app from './app';
+import config from './config/index';
+import { errorLogger, logger } from './shared/logger';
 
 async function bootstart() {
   try {
-    await mongoose.connect(config.database_url as string)
-    console.log(`🧠 Brain connected successfully`)
+    await mongoose.connect(config.database_url as string);
+    logger.info(`🧠 Brain connected successfully`);
 
     app.listen(config.port, () => {
-      console.log(`Univercity Management listening on port ${config.port}`)
-    })
+      logger.info(`Univercity Management listening on port ${config.port}`);
+    });
   } catch (err) {
-    console.log(`🧠 Brain not connected`, err)
+    errorLogger.error(`🧠 Brain not connected`, err);
   }
 }
 
-bootstart()
+bootstart();
