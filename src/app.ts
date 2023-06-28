@@ -1,7 +1,8 @@
-import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import express, { Application } from 'express';
 
-import userRouter from './app/modules/users/user.router';
+import globalErrrorHandler from './app/middleware/globalErrorHandler';
+import { UserRouters } from './app/modules/user/user.router';
 
 const app: Application = express();
 
@@ -13,13 +14,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //user routers
-app.use('/api/v1/user', userRouter);
+app.use('/api/v1/user', UserRouters);
 
 //error handling by class
 
 //testing
-app.get('/', async (req: Request, res: Response) => {
-  res.send('application successfully working');
-});
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('this is for testing perpase');
+// });
+
+//global error handling
+app.use(globalErrrorHandler);
 
 export default app;

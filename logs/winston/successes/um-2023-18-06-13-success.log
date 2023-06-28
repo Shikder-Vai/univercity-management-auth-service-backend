@@ -1,0 +1,60 @@
+{
+  message: '🧠 Brain connected successfully',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:00:11.279Z'
+}
+{
+  message: 'Univercity Management listening on port 5000',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:00:11.320Z'
+}
+{
+  message: '🧠 Brain connected successfully',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:03:45.909Z'
+}
+{
+  message: 'Univercity Management listening on port 5000',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:03:45.935Z'
+}
+{
+  message: '🧠 Brain connected successfully',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:04:12.407Z'
+}
+{
+  message: 'Univercity Management listening on port 5000',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:04:12.428Z'
+}
+{
+  message: '🧠 Brain connected successfully',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:06:12.910Z'
+}
+{
+  message: 'Univercity Management listening on port 5000',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:06:12.934Z'
+}
+{
+  message: '🧠 Brain connected successfully',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:09:51.476Z'
+}
+{
+  message: 'Univercity Management listening on port 5000',
+  level: 'info',
+  label: 'NS',
+  timestamp: '2023-06-18T07:09:51.499Z'
+}
