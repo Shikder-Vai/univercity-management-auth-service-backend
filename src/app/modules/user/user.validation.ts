@@ -2,10 +2,12 @@ import { z } from 'zod';
 
 const createUserZodShcema = z.object({
   body: z.object({
-    role: z.string({
-      required_error: 'role is require',
+    user: z.object({
+      role: z.string({
+        required_error: 'role is require',
+      }),
+      password: z.string().optional(),
     }),
-    password: z.string().optional(),
   }),
 });
 

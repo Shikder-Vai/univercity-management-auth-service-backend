@@ -2,7 +2,7 @@ import cors from 'cors';
 import express, { Application } from 'express';
 
 import globalErrrorHandler from './app/middleware/globalErrorHandler';
-import { UserRouters } from './app/modules/user/user.router';
+import routers from './app/routes/routesIndex';
 
 const app: Application = express();
 
@@ -14,7 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //user routers
-app.use('/api/v1/user', UserRouters);
+app.use('/api/v1', routers);
+// app.use('/api/v1/user', UserRouters);
+// app.use('/api/v1/academic-semester', academicSemesterRouters);
 
 //error handling by class
 

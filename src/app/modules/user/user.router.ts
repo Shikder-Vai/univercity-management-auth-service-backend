@@ -11,4 +11,4 @@ router.post(
   UserController.createUserController
 );
 
-export const UserRouters = router;
+export const userRouters = router;
