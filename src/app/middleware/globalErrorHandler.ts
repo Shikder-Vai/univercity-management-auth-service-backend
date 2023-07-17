@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from 'express';
+import { ZodError } from 'zod';
 import config from '../../config';
 import ApiError from '../../errors/apiError';
+import handleCastError from '../../errors/handleCastError';
 import handleValidationError from '../../errors/handleValidationError';
+import handleZodError from '../../errors/handleZodError';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import { errorLogger } from '../../shared/logger';
-import { ZodError } from 'zod';
-import handleZodError from '../../errors/handleZodError';
 
 const globalErrrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   config.env === 'development'
@@ -25,6 +26,11 @@ const globalErrrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     errMessages = simplifiError.errMessages;
   } else if (error instanceof ZodError) {
     const simplifiError = handleZodError(error);
+    statusCode = simplifiError.statusCode;
+    message = simplifiError.message;
+    errMessages = simplifiError.errMessages;
+  } else if (error?.name === 'CastError') {
+    const simplifiError = handleCastError(error);
     statusCode = simplifiError.statusCode;
     message = simplifiError.message;
     errMessages = simplifiError.errMessages;
