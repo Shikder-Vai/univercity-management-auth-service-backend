@@ -44,6 +44,21 @@
             "date": 1689607105621,
             "name": "F:\\Web development\\Next Level Web 2\\mission-3\\univercity-management-auth-backend\\logs\\winston\\errors\\um-2023-17-07-21-error.log",
             "hash": "fb8c622938b4e740124d2ad9cac046a77e559b7cd158076f8886b7335435ab8f"
+        },
+        {
+            "date": 1689615886309,
+            "name": "F:\\Web development\\Next Level Web 2\\mission-3\\univercity-management-auth-backend\\logs\\winston\\errors\\um-2023-17-07-23-error.log",
+            "hash": "c81fd3309810cb11238f5341ecb8af906ecddff479be81d6a62199dc820fee4b"
+        },
+        {
+            "date": 1689616832379,
+            "name": "F:\\Web development\\Next Level Web 2\\mission-3\\univercity-management-auth-backend\\logs\\winston\\errors\\um-2023-18-07-00-error.log",
+            "hash": "50e1c6fc9352227132b39e4fb46b27403d263edb7bd29d6fbb8edd36fb926b88"
+        },
+        {
+            "date": 1689620456171,
+            "name": "F:\\Web development\\Next Level Web 2\\mission-3\\univercity-management-auth-backend\\logs\\winston\\errors\\um-2023-18-07-01-error.log",
+            "hash": "a3f90d9d177eae80d9e53f00e1b4d2f8c9a91a02ac3954e4b5e1dc2edf9f0efa"
         }
     ],
     "hashType": "sha256"
