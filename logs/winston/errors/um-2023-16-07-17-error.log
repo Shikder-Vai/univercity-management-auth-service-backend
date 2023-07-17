@@ -1,0 +1,10 @@
+Sun Jul 16 2023 17 : 3 : 59 [NS] error: Can't use $option with String.
+Sun Jul 16 2023 17 : 9 : 24 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 11 : 5 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 13 : 1 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 19 : 52 [NS] error: Cast to number failed for value "{ '$toString': 'i' }" (type Object) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 23 : 7 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 31 : 32 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 35 : 0 [NS] error: Cast to number failed for value "{ '$eq': [ { '$toString': '$year' }, '20' ] }" (type Object) at path "year" for model "AcademicSemester"
+Sun Jul 16 2023 17 : 42 : 19 [NS] error: An object representing an expression must have exactly one field: { $eq: [ { $toString: "$year" }, "2024" ], $options: "i" }
+Sun Jul 16 2023 17 : 49 : 19 [NS] error: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester"

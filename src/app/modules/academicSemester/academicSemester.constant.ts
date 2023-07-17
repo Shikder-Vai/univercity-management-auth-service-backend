@@ -38,3 +38,12 @@ export const academicSemesterMonths: IAcademicSemesterMonths[] = [
   'November',
   'December',
 ];
+
+export const academicSemesterSearchableFields = ['title', 'code', 'year'];
+
+export const academicSemesterFillterableFields = [
+  'searchTerm',
+  'title',
+  'code',
+  'year',
+];
